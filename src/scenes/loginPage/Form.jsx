@@ -66,7 +66,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "process.env.API_URL/auth/register",
+      `${process.env.API_URL}/auth/register`,
       {
         method: "POST",
         body: formData,
