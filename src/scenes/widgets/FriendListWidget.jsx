@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `${process.env.API_URL}/users/${userId}/friends`,
+      `https://social-media-server1-4ouu.onrender.com${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

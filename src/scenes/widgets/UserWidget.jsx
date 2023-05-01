@@ -22,7 +22,7 @@ import {
     const main = palette.neutral.main;
   
     const getUser = async () => {
-      const response = await fetch(`${process.env.API_URL}/users/${userId}`, {
+      const response = await fetch(`https://social-media-server1-4ouu.onrender.com/users/${userId}`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });

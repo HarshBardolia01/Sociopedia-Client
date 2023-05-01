@@ -46,7 +46,7 @@ import {
         formData.append("picturePath", image.name);
       }
   
-      const response = await fetch(`${process.env.API_URL}/posts`, {
+      const response = await fetch(`https://social-media-server1-4ouu.onrender.com/posts`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,
